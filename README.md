@@ -34,7 +34,7 @@ Our top model turned out to be a Gridsearch version of the Bagging Classifier wh
 # Next Steps
 Continuing to improve our model will require further testing by manipulating our Gridsearch parameters. We would also like to try some other methods of filling our NaN values, for example with the standard average. The most surefire way of improving our model will be through the collection of new, complete data which means that the device Potabilites is building will actually become more accurate as it is used on new water samples. As more data becomes available we would like to see if splitting the data by region can have an effect on the performance of our model.
 
-
+.
 ├── build                   # Phase3_Project_Final_Notebook_Dimitry
 ├── Notes                   # Drafts of Jupyter Notebooks for Project
 ├── data                    # Project Data and Images
