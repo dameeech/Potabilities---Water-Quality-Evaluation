@@ -22,7 +22,7 @@ Having many different models at our disposal we decided to create a Modeling Env
 - Model Instantiations
 - Testing Area
 
-To see the function we created to easily run any instantiated model and the model as an object as well as output the model's performance results see the file call dm_models.ipynb in the Notes folder.
+To see the function we created to easily run any instantiated model and return the model as an object as well as the model's performance results see the file dm_models.ipynb in the Notes folder.
 
 Considering all of our data exploration we decided that it would be good to test our models on 4 different data sets:
 - Raw Data with filled in Null values using a Nearest Neighbors Classifier model which would fill in any NaNs based on their 5 closest neighbors.
