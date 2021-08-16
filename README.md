@@ -39,11 +39,13 @@ After extensive testing using 4 versions of our data we narrowed our ideal model
 Our top model turned out to be a Gridsearch version of the Bagging Classifier which gave us a 70 % accuracy on our test data. Our model precision for non-potable water is slightly higher than for potable, which we are encouraged by since we would absolutely prefer to lean on the side of caution with our life and death recommendations.
 
 # Next Steps
-Continuing to improve our model will require further testing by manipulating our Gridsearch parameters. We would also like to try some other methods of filling our NaN values, for example with the standard average. The most surefire way of improving our model will be through the collection of new, complete data which means that the device Potabilites is building will actually become more accurate as it is used on new water samples. As more data becomes available we would like to see if splitting the data by region can have an effect on the performance of our model.
+Continuing to improve our model will require further testing by manipulating our Gridsearch parameters. We would also like to try some other methods of filling our NaN values, for example with the standard average. 
+
+The most surefire way of improving our model will be through the collection of new, complete data which means that the device Potabilites is building will actually become more accurate as it is used on new water samples. As more data becomes available we would like to see if splitting the data by region can have an effect on the performance of our model.
 
 
-
-├── build                   # Phase3_Project_Final_Notebook_Dimitry
-├── Notes                   # Drafts of Jupyter Notebooks for Project
+# Repo Structure
+├── build                   # Phase3_Project_Final_Notebook_Dimitry.ipynb
+├── Notes                   # Drafts of Jupyter Notebooks for Project and dm_models notebook
 ├── data                    # Project Data and Images
 └── README.md               # Overview of Project
