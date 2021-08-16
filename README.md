@@ -1,1 +1,35 @@
-# Water Quality
+# Potabilities - Water Quality Evaluation
+![https://user-images.githubusercontent.com/32643842/129628650-77cdec1b-03ae-4180-9b51-b93b4ead14ab.png](https://user-images.githubusercontent.com/32643842/129628650-77cdec1b-03ae-4180-9b51-b93b4ead14ab.png)
+
+Potabilites is a start-up manufacturing a groundbreaking new device that will be able to quickly and cheaply test the potability of water anywhere in the world. 
+
+As the engineers at Potabilities work on the physical testing device, our team was hired to develop the model this device will use to determine whether the water sample is potable according to the World Health Organization and US Environmental Protection Agency standards.
+
+Our data was obtained from the Water Quality Dataset from Kaggel, available here. It contained 3,270 samples from water bodies all over the world. It contains nine features that the WHO and USEPA consider important in evaluating the potability of water. 
+
+First we explored the distribution of our target variable and discovered that we had a class imbalance of 1,998 non-potable samples and 1,278 that were potable. 
+
+![(https://user-images.githubusercontent.com/32643842/129629121-f704af34-f69e-4bd1-a570-fa14a43b82f1.jpg)](https://user-images.githubusercontent.com/32643842/129629121-f704af34-f69e-4bd1-a570-fa14a43b82f1.jpg)
+
+Considering the class imbalance we decided to check the separability of our target data. By generating a scaled scatterplot we were able to see a clear separability which showed us that we did not need to worry about balancing our data with Smote or other techniques. 
+
+Next we checked for any Null values in our data and discovered that 1,434 entries contained Null values. Since this is a fairly large chunk of our data we decided that we should try to fill in these gaps if possible. 
+
+Considering all of our data exploration we decided that it would be good to test our models on 4 different data sets:
+Raw Data with filled in Null values using a Nearest Neighbors Classifier model which would fill in any NaNs based on their 5 closest neighbors.
+Data with all of our Null values dropped.
+Raw Data with filled in Null values using a Nearest Neighbors Classifier model which would fill in any NaNs based on their 5 closest neighbors while dropping outlier data.
+
+After extensive testing using 4 versions of our data we narrowed our ideal models to the top 3 performers:
+- Gradient Boosting Classifier
+- Random Forest Classifier
+- Bagging Classifier
+
+![(https://user-images.githubusercontent.com/32643842/129629357-452b782e-7002-4740-9532-479b0a60ee4f.jpg)](https://user-images.githubusercontent.com/32643842/129629357-452b782e-7002-4740-9532-479b0a60ee4f.jpg)
+
+![(https://user-images.githubusercontent.com/32643842/129629395-3360a4e0-42a3-4b48-a176-288c5027035c.jpg)](https://user-images.githubusercontent.com/32643842/129629395-3360a4e0-42a3-4b48-a176-288c5027035c.jpg)
+
+Our top model turned out to be a Gridsearch version of the Bagging Classifier which gave us a 70 % accuracy on our test data. Our model precision for non-potable water is slightly higher than for potable, which we are encouraged by since we would absolutely prefer to lean on the side of caution with our life and death recommendations.
+
+# Next Steps
+Continuing to improve our model will require further testing by manipulating our Gridsearch parameters. We would also like to try some other methods of filling our NaN values, for example with the standard average. The most surefire way of improving our model will be through the collection of new, complete data which means that the device Potabilites is building will actually become more accurate as it is used on new water samples. As more data becomes available we would like to see if splitting the data by region can have an effect on the performance of our model.
