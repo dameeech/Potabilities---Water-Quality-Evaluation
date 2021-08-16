@@ -32,11 +32,8 @@ After extensive testing using 4 versions of our data we narrowed our ideal model
 - Random Forest Classifier
 - Bagging Classifier
 
-![(https://user-images.githubusercontent.com/32643842/129629357-452b782e-7002-4740-9532-479b0a60ee4f.jpg)](https://user-images.githubusercontent.com/32643842/129629357-452b782e-7002-4740-9532-479b0a60ee4f.jpg)
-
-![(https://user-images.githubusercontent.com/32643842/129629395-3360a4e0-42a3-4b48-a176-288c5027035c.jpg)](https://user-images.githubusercontent.com/32643842/129629395-3360a4e0-42a3-4b48-a176-288c5027035c.jpg)
-
-Our top model turned out to be a Gridsearch version of the Bagging Classifier which gave us a 70 % accuracy on our test data. Our model precision for non-potable water is slightly higher than for potable, which we are encouraged by since we would absolutely prefer to lean on the side of caution with our life and death recommendations.
+# Summary
+Our top model turned out to be a Random Forest Classifier which gave us between a 69% and 71% accuracy on our test data. Our model precision for non-potable water is slightly higher than for potable, which we are encouraged by since we would absolutely prefer to lean on the side of caution with our life and death recommendations.
 
 # Next Steps
 Continuing to improve our model will require further testing by manipulating our Gridsearch parameters. We would also like to try some other methods of filling our NaN values, for example with the standard average. 
