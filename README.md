@@ -15,10 +15,17 @@ Considering the class imbalance we decided to check the separability of our targ
 
 Next we checked for any Null values in our data and discovered that 1,434 entries contained Null values. Since this is a fairly large chunk of our data we decided that we should try to fill in these gaps if possible. 
 
+Having many different models at our disposal we decided to create a Modeling Environment so we can easily run tests with different configurations of our data on different models at once. We divided it into three components:
+- Data Instantiations
+- Model Instantiations
+- Testing Area
+
+To see the function we created to easily run any instantiated model and the model as an object as well as output the model's performance results see the file call dm_models.ipynb in the Notes folder.
+
 Considering all of our data exploration we decided that it would be good to test our models on 4 different data sets:
-Raw Data with filled in Null values using a Nearest Neighbors Classifier model which would fill in any NaNs based on their 5 closest neighbors.
-Data with all of our Null values dropped.
-Raw Data with filled in Null values using a Nearest Neighbors Classifier model which would fill in any NaNs based on their 5 closest neighbors while dropping outlier data.
+- Raw Data with filled in Null values using a Nearest Neighbors Classifier model which would fill in any NaNs based on their 5 closest neighbors.
+- Data with all of our Null values dropped.
+- Raw Data with filled in Null values using a Nearest Neighbors Classifier model which would fill in any NaNs based on their 5 closest neighbors while - dropping outlier data.
 
 After extensive testing using 4 versions of our data we narrowed our ideal models to the top 3 performers:
 - Gradient Boosting Classifier
