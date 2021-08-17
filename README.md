@@ -45,14 +45,10 @@ The most surefire way of improving our model will be through the collection of n
 
 # Repo Structure
 
-
 ├── build                   # Phase3_Project_Final_Notebook_Dimitry.ipynb
-
 
 ├── Notes                   # Drafts of Jupyter Notebooks for Project and dm_models notebook
 
-
 ├── data                    # Project Data and Images
-
 
 └── README.md               # Overview of Project
