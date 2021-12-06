@@ -1,5 +1,8 @@
 # Potabilities - Water Quality Evaluation
-![https://user-images.githubusercontent.com/32643842/129628650-77cdec1b-03ae-4180-9b51-b93b4ead14ab.png](https://user-images.githubusercontent.com/32643842/129628650-77cdec1b-03ae-4180-9b51-b93b4ead14ab.png)
+
+<p align="center">
+<img height="275" src="https://user-images.githubusercontent.com/32643842/129628650-77cdec1b-03ae-4180-9b51-b93b4ead14ab.png" />
+</p>
 
 ## Business Case
 Potabilites is a start-up manufacturing a groundbreaking new device that will be able to quickly and cheaply test the potability of water anywhere in the world. 
