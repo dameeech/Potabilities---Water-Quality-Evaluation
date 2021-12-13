@@ -1,7 +1,7 @@
 # Potabilities - Water Quality Evaluation
 
 <p align="center">
-<img height="275" src="https://user-images.githubusercontent.com/32643842/129628650-77cdec1b-03ae-4180-9b51-b93b4ead14ab.png" />
+<img height="75%" src="https://user-images.githubusercontent.com/32643842/129628650-77cdec1b-03ae-4180-9b51-b93b4ead14ab.png" />
 </p>
 
 ## Business Case
@@ -14,7 +14,9 @@ Our data was obtained from the Water Quality Dataset from Kaggel, available here
 
 First we explored the distribution of our target variable and discovered that we had a class imbalance of 1,998 non-potable samples and 1,278 that were potable. 
 
-![(https://user-images.githubusercontent.com/32643842/129629121-f704af34-f69e-4bd1-a570-fa14a43b82f1.jpg)](https://user-images.githubusercontent.com/32643842/129629121-f704af34-f69e-4bd1-a570-fa14a43b82f1.jpg)
+<p align="center">
+<img width="75%" src="https://user-images.githubusercontent.com/32643842/129629121-f704af34-f69e-4bd1-a570-fa14a43b82f1.jpg" />
+</p>
 
 Considering the class imbalance we decided to check the separability of our target data. By generating a scaled scatterplot we were able to see a clear separability which showed us that we did not need to worry about balancing our data with Smote or other techniques. 
 
