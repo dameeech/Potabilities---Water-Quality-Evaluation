@@ -10,7 +10,7 @@ Potabilites is a start-up manufacturing a groundbreaking new device that will be
 As the engineers at Potabilities work on the physical testing device, our team was hired to develop the model this device will use to determine whether the water sample is potable according to the World Health Organization and US Environmental Protection Agency standards.
 
 ## Method
-Our data was obtained from the Water Quality Dataset from Kaggel, available here. It contained 3,270 samples from water bodies all over the world. It contains nine features that the WHO and USEPA consider important in evaluating the potability of water. 
+Our data was obtained from the Water Quality Dataset from Kaggle, available here. It contained 3,270 samples from water bodies all over the world. It contains nine features that the WHO and USEPA consider important in evaluating the potability of water. 
 
 First we explored the distribution of our target variable and discovered that we had a class imbalance of 1,998 non-potable samples and 1,278 that were potable. 
 
